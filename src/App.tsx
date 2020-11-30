@@ -1,9 +1,10 @@
 import React from 'react';
+import AboutUs from './pages/AboutUs';
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <h1>PortFolio</h1>
+      <AboutUs />
     </div>
   );
 };
