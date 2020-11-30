@@ -1,9 +1,9 @@
 import React from 'react';
-import clock from '../img/clock.svg';
-import diaphragm from '../img/diaphragm.svg';
-import home2 from '../img/home2.png';
-import money from '../img/money.svg';
-import teamwork from '../img/teamwork.svg';
+import clock from '../../img/clock.svg';
+import diaphragm from '../../img/diaphragm.svg';
+import home2 from '../../img/home2.png';
+import money from '../../img/money.svg';
+import teamwork from '../../img/teamwork.svg';
 
 // import { Container } from './styles';
 
