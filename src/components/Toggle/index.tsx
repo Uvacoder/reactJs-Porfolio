@@ -7,7 +7,7 @@ interface ToggleProps {
 }
 
 const Toggle: React.FC<ToggleProps> = ({ children, title }) => {
-  const [toggleQuestion, setToggleQuestion] = useState(true);
+  const [toggleQuestion, setToggleQuestion] = useState(false);
   return (
     // eslint-disable-next-line jsx-a11y/no-static-element-interactions
     <motion.div

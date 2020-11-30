@@ -1,15 +1,23 @@
 import React from 'react';
+import { scrollReveal } from '../../animation';
 import clock from '../../img/clock.svg';
 import diaphragm from '../../img/diaphragm.svg';
 import home2 from '../../img/home2.png';
 import money from '../../img/money.svg';
 import teamwork from '../../img/teamwork.svg';
 import { Description, Image } from '../../styles/pageLayout';
+import { UseScroll } from '../UseScroll';
 import { Card, Cards, Services } from './styles';
 
 const ServicesSection: React.FC = () => {
+  const [element, controls] = UseScroll();
   return (
-    <Services>
+    <Services
+      ref={element}
+      initial="hidden"
+      variants={scrollReveal}
+      animate={controls}
+    >
       <Description>
         <h2>
           High

@@ -11,12 +11,16 @@ import {
   sliderContainer
 } from '../../animation';
 import { Hide } from '../../components/AboutSection/styles';
+import ScrollTop from '../../components/ScrollTop';
+import { UseScroll } from '../../components/UseScroll';
 import athlete from '../../img/athlete-small.png';
 import goodtimes from '../../img/goodtimes-small.png';
 import theracer from '../../img/theracer-small.png';
 import { Frame1, Frame2, Frame3, Frame4, Movie, Work } from './styles';
 
 const OurWork: React.FC = () => {
+  const [element, controls] = UseScroll();
+  const [element2, controls2] = UseScroll();
   return (
     <Work
       style={{ background: '#fff' }}
@@ -44,20 +48,26 @@ const OurWork: React.FC = () => {
           </Hide>
         </Link>
       </Movie>
-      <Movie>
+      <Movie ref={element} variants={fade} initial="hidden" animate={controls}>
         <h2>The Racer</h2>
-        <div className="line" />
+        <motion.div variants={LineAnimation} className="line" />
         <Link to="/movie/creed">
           <img src={theracer} alt="theracer" />
         </Link>
       </Movie>
-      <Movie>
+      <Movie
+        ref={element2}
+        variants={fade}
+        initial="hidden"
+        animate={controls2}
+      >
         <h2>Good Times</h2>
-        <div className="line" />
+        <motion.div variants={LineAnimation} className="line" />
         <Link to="/movie/creed">
           <img src={goodtimes} alt="goodtimes" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };

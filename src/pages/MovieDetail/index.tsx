@@ -1,6 +1,7 @@
 import React from 'react';
 import { pageAnimation } from '../../animation';
 import Award from '../../components/Award';
+import ScrollTop from '../../components/ScrollTop';
 import athlete from '../../img/athlete-small.png';
 import athlete2 from '../../img/athlete2.png';
 import { Awards, Details, HeadLine, ImageDisplay } from './styles';
@@ -34,6 +35,7 @@ const MovieDetail: React.FC = () => {
       <ImageDisplay>
         <img src={athlete2} alt="" />
       </ImageDisplay>
+      <ScrollTop />
     </Details>
   );
 };

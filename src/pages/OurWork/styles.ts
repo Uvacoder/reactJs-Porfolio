@@ -5,12 +5,15 @@ export const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
+  @media (max-width: 1300px) {
+    padding: 2rem;
+  }
   h2 {
     padding: 1rem 0;
   }
 `;
 
-export const Movie = styled.div`
+export const Movie = styled(motion.div)`
   padding-bottom: 10rem;
   h2 {
     font-weight: 400;
