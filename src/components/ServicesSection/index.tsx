@@ -4,54 +4,54 @@ import diaphragm from '../../img/diaphragm.svg';
 import home2 from '../../img/home2.png';
 import money from '../../img/money.svg';
 import teamwork from '../../img/teamwork.svg';
-
-// import { Container } from './styles';
+import { Description, Image } from '../../styles/pageLayout';
+import { Card, Cards, Services } from './styles';
 
 const ServicesSection: React.FC = () => {
   return (
-    <div className="services">
-      <div className="description">
+    <Services>
+      <Description>
         <h2>
           High
-          <span>quality</span>
+          <span> quality </span>
           services
         </h2>
-        <div className="cards">
-          <div className="card">
+        <Cards>
+          <Card>
             <div className="icon">
               <img src={clock} alt="clock" />
               <h3>Efficient</h3>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div className="card">
+          </Card>
+          <Card>
             <div className="icon">
               <img src={teamwork} alt="teamwork" />
               <h3>Efficient</h3>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div className="card">
+          </Card>
+          <Card>
             <div className="icon">
               <img src={diaphragm} alt="diaphragm" />
               <h3>Efficient</h3>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div className="card">
+          </Card>
+          <Card>
             <div className="icon">
               <img src={money} alt="money" />
               <h3>Efficient</h3>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
+          </Card>
+        </Cards>
+      </Description>
 
-      <div className="image">
+      <Image>
         <img src={home2} alt="camera" />
-      </div>
-    </div>
+      </Image>
+    </Services>
   );
 };
 

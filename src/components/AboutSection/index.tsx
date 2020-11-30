@@ -1,10 +1,11 @@
 import React from 'react';
 import home1 from '../../img/home1.png';
-import { About, Description, Hide, Image } from './styles';
+import { Description, Image, Layout } from '../../styles/pageLayout';
+import { Hide } from './styles';
 
 const AboutSecion: React.FC = () => {
   return (
-    <About>
+    <Layout>
       <Description>
         <div className="title">
           <Hide>
@@ -31,7 +32,7 @@ const AboutSecion: React.FC = () => {
       <Image>
         <img src={home1} alt="guy with camera" />
       </Image>
-    </About>
+    </Layout>
   );
 };
 

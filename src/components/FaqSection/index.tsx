@@ -1,8 +1,9 @@
 import React from 'react';
+import { Layout } from '../../styles/pageLayout';
 
 const FaqSection: React.FC = () => {
   return (
-    <div className="faq">
+    <Layout>
       <h2>
         Any Questions
         <span>FAQ</span>
@@ -44,7 +45,7 @@ const FaqSection: React.FC = () => {
           </p>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
