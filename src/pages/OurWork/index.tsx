@@ -11,21 +11,21 @@ const OurWork: React.FC = () => {
       <Movie>
         <h2>The Athlete</h2>
         <div className="line" />
-        <Link to="/">
+        <Link to="/movie/creed">
           <img src={athlete} alt="athelete" />
         </Link>
       </Movie>
       <Movie>
         <h2>The Racer</h2>
         <div className="line" />
-        <Link to="/">
+        <Link to="/movie/creed">
           <img src={theracer} alt="theracer" />
         </Link>
       </Movie>
       <Movie>
         <h2>Good Times</h2>
         <div className="line" />
-        <Link to="/">
+        <Link to="/movie/creed">
           <img src={goodtimes} alt="goodtimes" />
         </Link>
       </Movie>
