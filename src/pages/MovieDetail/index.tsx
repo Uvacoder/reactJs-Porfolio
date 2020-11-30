@@ -1,4 +1,5 @@
 import React from 'react';
+import { pageAnimation } from '../../animation';
 import Award from '../../components/Award';
 import athlete from '../../img/athlete-small.png';
 import athlete2 from '../../img/athlete2.png';
@@ -6,7 +7,12 @@ import { Awards, Details, HeadLine, ImageDisplay } from './styles';
 
 const MovieDetail: React.FC = () => {
   return (
-    <Details>
+    <Details
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <HeadLine>
         <h2>CREED</h2>
         <img src={athlete} alt="" />

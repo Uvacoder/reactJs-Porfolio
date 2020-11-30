@@ -29,7 +29,7 @@ export default createGlobalStyle`
   }
 
   h2 {
-    font-weight: lighter;
+    font-weight: 400;
     font-size: 4rem;
   }
   h3 {

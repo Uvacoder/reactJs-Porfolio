@@ -8,7 +8,7 @@ export const Faq = styled(Layout)`
   }
   h2 {
     padding-bottom: 2rem;
-    font-weight: lighter;
+    font-weight: 400;
   }
   .faq-line {
     background: #ccc;

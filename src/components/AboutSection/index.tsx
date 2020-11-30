@@ -1,37 +1,48 @@
+import { motion } from 'framer-motion';
 import React from 'react';
+import { fade, photoAnimation, titleAnimation } from '../../animation';
 import home1 from '../../img/home1.png';
 import { Description, Image, Layout } from '../../styles/pageLayout';
+import Wave from '../Wave';
 import { Hide } from './styles';
 
 const AboutSecion: React.FC = () => {
   return (
     <Layout>
       <Description>
-        <div className="title">
+        <motion.div className="title">
           <Hide>
-            <h2>We work to make </h2>
+            <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2 variants={titleAnimation}>
               your
               <span> dreams </span>
-            </h2>
+              come
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>come true. </h2>
+            <motion.h2 variants={titleAnimation}> true. </motion.h2>
           </Hide>
-        </div>
+        </motion.div>
 
-        <p>
+        <motion.p variants={fade}>
           Contact us for any photograpy or videography ideas that you have. We
           have professional with amazing skills
-        </p>
-        <button type="button"> Contact Us</button>
+        </motion.p>
+        <motion.button variants={fade} type="button">
+          Contact Us
+        </motion.button>
       </Description>
 
       <Image>
-        <img src={home1} alt="guy with camera" />
+        <motion.img
+          variants={photoAnimation}
+          src={home1}
+          alt="guy with camera"
+        />
       </Image>
+      <Wave />
     </Layout>
   );
 };
