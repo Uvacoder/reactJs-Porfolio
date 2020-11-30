@@ -1,12 +1,12 @@
 import React from 'react';
-import { Layout } from '../../styles/pageLayout';
+import { Faq } from './styles';
 
 const FaqSection: React.FC = () => {
   return (
-    <Layout>
+    <Faq>
       <h2>
         Any Questions
-        <span>FAQ</span>
+        <span> FAQ </span>
       </h2>
       <div className="question">
         <h4>How do I start?</h4>
@@ -19,6 +19,7 @@ const FaqSection: React.FC = () => {
             maxime dignissimos tenetur velit?
           </p>
         </div>
+        <div className="faq-line" />
       </div>
       <div className="question">
         <h4>Daily Schedule</h4>
@@ -31,6 +32,7 @@ const FaqSection: React.FC = () => {
             maxime dignissimos tenetur velit?
           </p>
         </div>
+        <div className="faq-line" />
       </div>
 
       <div className="question">
@@ -44,8 +46,9 @@ const FaqSection: React.FC = () => {
             maxime dignissimos tenetur velit?
           </p>
         </div>
+        <div className="faq-line" />
       </div>
-    </Layout>
+    </Faq>
   );
 };
 
